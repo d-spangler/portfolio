@@ -71,6 +71,7 @@ a:active {
 
 #header {
     background-color: var(--text-secondary);
+    text-decoration: none;
 }
 .center-header {
     font-size: 200%;
@@ -102,7 +103,7 @@ a:active {
 .hero-shot {
     background-image: url(assets/b&w.profile.altered.jpg);
     background-repeat: no-repeat;
-    background-size: 60% 90%;
+    background-size: 60% 110%;
     background-position: center;
     height: 75vh;
     margin-top: 2%;
@@ -113,9 +114,9 @@ a:active {
 /* ----------------------------------------------------------- */
 
 #about-me {
+    padding-top: 5%;
     text-align: center;
-    border-bottom: 1px solid #523d48;
-    
+    /*border-bottom: 1px solid #523d48;*/
 }
 
 /* ----------------------------------------------------------- */
@@ -126,15 +127,74 @@ a:active {
     padding-top: 2%;
 }
 
+#resume {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+#resume a {
+    text-align: center;
+    padding: 10px;
+    color: var(--text-secondary);
+    border: 3px solid var(--text-secondary);
+    background-color: var(--text-primary);
+    padding: 10px 40px;
+    
+}
+
+#resume a:hover{
+    text-decoration: underline;
+    color: #833b94;
+}
+
 /* ----------------------------------------------------------- */
 /* Works Section - Professional */
 /* ----------------------------------------------------------- */
 
+.prof-works ul{
+    text-align: center;
+}
+
+.prof-works li {
+    list-style-type: none;
+}
+
+.prof-works img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--text-primary);
+}
+
+.prof-works img:hover,
+img:active {
+    transform: scale(1.25);
+}
 
 /* ----------------------------------------------------------- */
 /* Works Section - Personal */
 /* ----------------------------------------------------------- */
 
+.pers-works ul{
+    text-align: center;
+}
+
+.pers-works li {
+    list-style-type: none;
+}
+
+.pers-works img{
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--text-primary);
+}
+
+.pers-works img:hover,
+img:active {
+    transform: scale(1.25);
+}
 
 /* ----------------------------------------------------------- */
 /* Contact Form Section */
@@ -143,11 +203,16 @@ a:active {
 #contact{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 15%;
+    padding-top: 5%;
+    background-color: var(--text-primary);
+}
+
+#contact h3 {
+    color: var(--text-secondary);
 }
 
 .form-left {
